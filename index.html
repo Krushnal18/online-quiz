@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- AUTH -->
+  <div id="authBox">
+    <h2>Online Quiz</h2>
+    <input type="email" id="email" placeholder="Gmail" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="login()">Login</button>
+    <button class="secondary" onclick="signup()">Sign Up</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quizBox" class="hidden">
+    <div class="top">
+      <span id="progress"></span>
+      <span id="timer"></span>
+    </div>
+
+    <h3 id="question"></h3>
+    <ul id="options"></ul>
+
+    <div class="nav">
+      <button onclick="prevQuestion()">Previous</button>
+      <button onclick="nextQuestion()">Next</button>
+      <button class="submit" onclick="submitQuiz()">Submit</button>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="resultBox" class="hidden">
+    <h2 id="score"></h2>
+    <div id="answersReview"></div>
+    <button onclick="restart()">Logout</button>
+  </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
