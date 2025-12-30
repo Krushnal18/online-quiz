@@ -1,3 +1,5 @@
+Live Demo: https://krushnal18.github.io/online-quiz/
+
 # Online Quiz Application
 
 A browser-based quiz application built using HTML, CSS, and JavaScript.
@@ -18,3 +20,4 @@ A browser-based quiz application built using HTML, CSS, and JavaScript.
 This project uses browser localStorage to simulate login and signup.
 It does NOT use a backend or real authentication.
 This is for learning and demonstration purposes only.
+
